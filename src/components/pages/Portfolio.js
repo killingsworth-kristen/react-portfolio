@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
 
+import employeeTracker from './../../assets/employeetracker.PNG'
+import gameHoard from './../../assets/gamehoard.PNG'
+import hobbyTracker from './../../assets/hobbytracker.PNG'
+import READMEgenerator from './../../assets/readmegenerator.PNG'
+import socialNetworkAPI from './../../assets/socialnetworkAPI.PNG'
+import weatherDashboard from './../../assets/weatherdashboard.PNG'
+
+
 export default function Portfolio () {
 
     const [currentIndicator, setCurrentIndicator] = useState(1)
@@ -46,45 +54,45 @@ export default function Portfolio () {
             </div>
             <div className="carousel-inner">
                 <div className={currentSlide === 1 ? "carousel-item active" : "carousel-item"} id="item1">
-                    <img src="http://placekitten.com/300/300" className="d-block w-100" alt="..."/>
+                    <img src={hobbyTracker} className="d-block w-100" alt="hobby tracker website"/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Hobby Tracker</h5>
+                        <p>This application allows the user to 'level up' as they complete tasks and get rewarded with YouTube videos based on their personal preferences.</p>
                     </div>
                 </div>
                 <div className={currentSlide === 2 ? "carousel-item active" : "carousel-item"} id="item2">
-                    <img src="http://placekitten.com/301/301" className="d-block w-100" alt="..."/>
+                    <img src={gameHoard} className="d-block w-100" alt="app that tracks games you/others own"/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5>Game Hoard</h5>
+                        <p>This app allows users to catalogue their game collection and find other users to play with.</p>
                     </div>
                 </div>
                 <div className={currentSlide === 3 ? "carousel-item active" : "carousel-item"} id="item3">
-                    <img src="http://placekitten.com/302/302" className="d-block w-100" alt="..."/>
+                    <img src={weatherDashboard} className="d-block w-100" alt="weather dashboard app"/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5>Weather Dashboard</h5>
+                        <p>Allows the user to check the weather for any city in the US; utilizes a 3rd party API.</p>
                     </div>
                 </div>
                 <div className={currentSlide === 4 ? "carousel-item active" : "carousel-item"} id="item4">
-                    <img src="http://placekitten.com/303/303" className="d-block w-100" alt="..."/>
+                    <img src={socialNetworkAPI} className="d-block w-100" alt="A social media API that returns user data as JSON"/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>Fourth slide label</h5>
-                        <p>Some representative placeholder content for the fourth slide.</p>
+                        <h5>Social Network API</h5>
+                        <p>Utilizes a Mongo database to replicate social network functionality without a frontend.</p>
                     </div>
                 </div>
                 <div className={currentSlide === 5 ? "carousel-item active" : "carousel-item"} id="item5">
-                    <img src="http://placekitten.com/304/304" className="d-block w-100" alt="..."/>
+                    <img src={employeeTracker} className="d-block w-100" alt="Console/command line app that tracks employees"/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>Fifth slide label</h5>
-                        <p>Some representative placeholder content for the fifth slide.</p>
+                        <h5>Employee Tracker</h5>
+                        <p>Utilizes a SQL database to make a console/command line app that allows the user to manipulate employee data.</p>
                     </div>
                 </div>
                 <div className={currentSlide === 6 ? "carousel-item active" : "carousel-item"} id="item6">
-                    <img src="http://placekitten.com/305/305" className="d-block w-100" alt="..."/>
+                    <img src={READMEgenerator} className="d-block w-100" alt="Console/command line app that generates a README file"/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>Sixth slide label</h5>
-                        <p>Some representative placeholder content for the sixth slide.</p>
+                        <h5>Professional README Generator</h5>
+                        <p>Allows a user to create a README file for their app in the console/command line through a series of prompts.</p>
                     </div>
                 </div>
             </div>
