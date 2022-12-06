@@ -54,42 +54,54 @@ export default function Portfolio () {
             </div>
             <div className="carousel-inner">
                 <div className={currentSlide === 1 ? "carousel-item active" : "carousel-item"} id="item1">
+                    <a href='https://diangigrich.github.io/PineappleMotivator/index.html#' target="_blank">
                     <img src={hobbyTracker} className="d-block w-100" alt="hobby tracker website"/>
+                    </a>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Hobby Tracker</h5>
                         <p>This application allows the user to 'level up' as they complete tasks and get rewarded with YouTube videos based on their personal preferences.</p>
                     </div>
                 </div>
                 <div className={currentSlide === 2 ? "carousel-item active" : "carousel-item"} id="item2">
+                    <a href='https://gamehoard2022.herokuapp.com/' target="_blank">
                     <img src={gameHoard} className="d-block w-100" alt="app that tracks games you/others own"/>
+                    </a>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Game Hoard</h5>
                         <p>This app allows users to catalogue their game collection and find other users to play with.</p>
                     </div>
                 </div>
                 <div className={currentSlide === 3 ? "carousel-item active" : "carousel-item"} id="item3">
+                    <a href='https://killingsworth-kristen.github.io/weather-dashboard/' target="_blank">
                     <img src={weatherDashboard} className="d-block w-100" alt="weather dashboard app"/>
+                    </a>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Weather Dashboard</h5>
                         <p>Allows the user to check the weather for any city in the US; utilizes a 3rd party API.</p>
                     </div>
                 </div>
                 <div className={currentSlide === 4 ? "carousel-item active" : "carousel-item"} id="item4">
+                    <a href='https://github.com/killingsworth-kristen/social-network-API' target="_blank">
                     <img src={socialNetworkAPI} className="d-block w-100" alt="A social media API that returns user data as JSON"/>
+                    </a>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Social Network API</h5>
                         <p>Utilizes a Mongo database to replicate social network functionality without a frontend.</p>
                     </div>
                 </div>
                 <div className={currentSlide === 5 ? "carousel-item active" : "carousel-item"} id="item5">
+                    <a href='https://github.com/killingsworth-kristen/employee-tracker' target="_blank">
                     <img src={employeeTracker} className="d-block w-100" alt="Console/command line app that tracks employees"/>
+                    </a>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Employee Tracker</h5>
                         <p>Utilizes a SQL database to make a console/command line app that allows the user to manipulate employee data.</p>
                     </div>
                 </div>
                 <div className={currentSlide === 6 ? "carousel-item active" : "carousel-item"} id="item6">
+                    <a href='https://github.com/killingsworth-kristen/professional-README-generator' target="_blank">
                     <img src={READMEgenerator} className="d-block w-100" alt="Console/command line app that generates a README file"/>
+                    </a>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Professional README Generator</h5>
                         <p>Allows a user to create a README file for their app in the console/command line through a series of prompts.</p>
