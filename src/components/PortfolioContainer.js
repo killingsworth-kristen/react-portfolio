@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer"
 
 export default function PortfolioContainer () {
-    const [currentPage, setCurrentPage] = useState("About Me")
+    const [currentPage, setCurrentPage] = useState("Portfolio")
     function renderPage () {
         if (currentPage === `About Me`) {
           return (<AboutMe />)
@@ -18,7 +18,7 @@ export default function PortfolioContainer () {
         } else if (currentPage === `Resume`) {
           return (<Resume/>)
         } else {
-          return (<AboutMe/>)
+          return (<Portfolio/>)
         }
       }
       const handlePageChange = (page) => setCurrentPage(page);

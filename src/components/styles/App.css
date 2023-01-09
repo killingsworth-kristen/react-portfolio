@@ -2,39 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: lightslategrey;
+    background-color: black;
+    font-family: Raleway;
 }
 
 h1 {
+    color: white;
     display: inline;
+    background-color: transparent;
+}
+
+button {
+    background-color: lightslategray;
+}
+
+.header {
+    background-image: url("./../../assets/pexels-adrien-olichon-2387532.jpg");
 }
 
 .nav-tabs {
     justify-content: flex-end;
     margin-left: 5%;
+    background-color: transparent;
 }
 
 .nav-tabs a {
     text-decoration: none;
     color: white;
 }
-
-.carousel {
-    margin-top: 3%;
-    max-width: 50%;
-    margin: 0 auto;
+.portfolio-card-container {
+    display: flex;
+}
+.portfolio-card {
+    color: white;
+    width: 20%;
+    background-color: lightslategray;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 40px;
 }
 
-.carousel-caption {
-    background-color: rgba(119,136,153,.8);
+.portfolio-card:hover {
+    width: 30%;
+    animation-delay: 2s;
 }
 
-.carousel-control-prev-icon {
-    background-color: rgba(119,136,153,.8);
+.portfolio-card a, h5, p {
+    background-color: lightslategray;
+    text-decoration: none;
+    color: white;
 }
 
-.carousel-control-next-icon {
-    background-color: rgba(119,136,153,.8);
+#README-img {
+    height: 100px;;
 }
 
 .about-me{
@@ -42,11 +62,12 @@ h1 {
     padding: 2%;
     border: solid 2px black;
     border-radius: 15px;
-    background-color: white;
+    background-color: lightslategray;
 }
 
-.about-me p, a {
-    background-color: white;
+.about-me a {
+    background-color: lightslategray;
+    color: white;
 }
 
 .resume {
@@ -92,4 +113,10 @@ h1 {
 .footer {
     display: flex;
     justify-content: space-around;
+    color: lightslategray;
+    
+}
+
+.footer p {
+    background-color: black;
 }

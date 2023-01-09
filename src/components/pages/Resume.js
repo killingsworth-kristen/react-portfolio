@@ -1,12 +1,27 @@
 import React from 'react';
 
 export default function Resume () {
+
+    function downloadResume () {
+        fetch('killingsworthResumeDec2022.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'killingsworthResumeDec2022.pdf';
+                alink.click();
+            })
+        })
+    }
+
     return (
         <div className='resume'>
             <h2>Education</h2>
             <ul className="resume-ul">
-                <li className="resume-li">BACHELOR OF THE ARTS | DECEMBER 2020 | UNIVERSITY OF WASHINGTON</li>
                 <li className="resume-li">UNIVERSITY OF WASHINGTON CODING BOOTCAMP CERTIFICATE</li>
+                <li className="resume-li">BACHELOR OF THE ARTS | DECEMBER 2020 | UNIVERSITY OF WASHINGTON</li>
             </ul>
             <h2>Work Experience</h2>
             <ul className="resume-ul">
@@ -37,12 +52,17 @@ export default function Resume () {
                 <li className="resume-li">Node.js
                     <ul className="resume-ul">
                         <li className="resume-li">Express.js</li>
-                        <li className="resume-li">React</li>
+                        <li className='resume-li'>Bcrypt</li>
+                        <li className='resume-li'>MySQL2</li>
+                        <li className='resume-li'>Sequelize</li>
+                        <li className='resume-li'>Mongoose</li>
+                        <li className='resume-li'>Inquirer</li>
                     </ul>
                 </li>
+                <li className="resume-li">React, Handlebars</li>
                 <li className="resume-li">SQL and Mongo</li> 
             </ul>
-            <a href="#">Download PDF version (coming soon!)</a>
+            <button onClick={downloadResume}>Download PDF version</button>
         </div>
     )
 }
